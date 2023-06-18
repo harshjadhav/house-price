@@ -14,7 +14,7 @@ url_lalbaug = "https://www.nobroker.in/property/sale/mumbai/Lal%20Baug/?searchPa
 url_dadar = "https://www.nobroker.in/property/sale/mumbai/Dadar/?searchParam=W3sibGF0IjoxOS4wMTc3OTg5LCJsb24iOjcyLjg0NzgxMTk5OTk5OTk5LCJwbGFjZUlkIjoiQ2hJSkQ4MmdEdHZPNXpzUjBGdVpPVkJHaWtJIiwicGxhY2VOYW1lIjoiRGFkYXIiLCJzaG93TWFwIjpmYWxzZX1d&propType=AP&type=BHK1,BHK2,BHK3,BHK4&locality=Dadar"
 url_matunga = "https://www.nobroker.in/property/sale/mumbai/Matunga/?searchParam=W3sibGF0IjoxOS4wMjY4NzQ3LCJsb24iOjcyLjg1NTMzNTIsInBsYWNlSWQiOiJDaElKejBocjZkRE81enNSSkFNdC0ybHVnWG8iLCJwbGFjZU5hbWUiOiJNYXR1bmdhIiwic2hvd01hcCI6ZmFsc2V9XQ==&propType=AP&type=BHK1,BHK2,BHK3,BHK4&locality=Matunga"
 url_mahim = "https://www.nobroker.in/property/sale/mumbai/Mahim/?searchParam=W3sibGF0IjoxOS4wMzUzODQ5LCJsb24iOjcyLjg0MjMwMzYsInBsYWNlSWQiOiJDaElKWFN2WVdpN0o1enNSRGI2RUsyNEoxS1UiLCJwbGFjZU5hbWUiOiJNYWhpbSIsInNob3dNYXAiOmZhbHNlfV0=&propType=AP&type=BHK1,BHK2,BHK3,BHK4&locality=Mahim"
-#url_wadala = "https://www.nobroker.in/property/sale/mumbai/Wadala%20(W)/?searchParam=W3sibGF0IjoxOS4wMTcxOTY3LCJsb24iOjcyLjg1NzkxNzMsInBsYWNlSWQiOiJDaElKbDc1dDB5UFA1enNSN0hHazBWLUVZMEUiLCJwbGFjZU5hbWUiOiJXYWRhbGEgKFcpIiwic2hvd01hcCI6ZmFsc2V9XQ==&propType=AP&type=BHK1,BHK2,BHK3,BHK4&locality=Wadala%20(W)"
+url_wadala = "https://www.nobroker.in/property/sale/mumbai/Wadala%20(W)/?searchParam=W3sibGF0IjoxOS4wMTcxOTY3LCJsb24iOjcyLjg1NzkxNzMsInBsYWNlSWQiOiJDaElKbDc1dDB5UFA1enNSN0hHazBWLUVZMEUiLCJwbGFjZU5hbWUiOiJXYWRhbGEgKFcpIiwic2hvd01hcCI6ZmFsc2V9XQ==&propType=AP&type=BHK1,BHK2,BHK3,BHK4&locality=Wadala%20(W)"
 url_prabhadevi = "https://www.nobroker.in/property/sale/mumbai/Prabhadevi/?searchParam=W3sibGF0IjoxOS4wMTYzMjgzLCJsb24iOjcyLjgyOTExMjksInBsYWNlSWQiOiJDaElKY2E3YUxyck81enNSenlXMExmQXpRQWsiLCJwbGFjZU5hbWUiOiJQcmFiaGFkZXZpIiwic2hvd01hcCI6ZmFsc2V9XQ==&propType=AP&type=BHK1,BHK2,BHK3,BHK4&locality=Prabhadevi"
 
 #call function from scrapping
@@ -35,9 +35,9 @@ houses = house_scr.scrape_houses(url_mahim)
 for house in houses:
     all_houses.append(house)
 
-'''houses = house_scr.scrape_houses(url_wadala)
+houses = house_scr.scrape_houses(url_wadala)
 for house in houses:
-    all_houses.append(house)'''
+    all_houses.append(house)
 
 houses = house_scr.scrape_houses(url_prabhadevi)
 for house in houses:
